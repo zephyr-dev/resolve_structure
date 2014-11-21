@@ -1,0 +1,18 @@
+name:                ResolveStructure
+version:             0.1.0.0
+description:         A tool for resolving git conflicting structure.rb.
+license:             MIT
+author:              Alex Babkin, James Vanneman
+maintainer:          alex@gust.com, james@gust.com
+build-type:          Simple
+cabal-version:       >=1.8
+
+
+executable ResolveStructure
+  hs-source-dirs: src
+  main-is:        Main.hs
+  ghc-options:    -static -Wall
+  buildable: True
+  build-depends:
+      base >= 4 && < 5
+    , regex-posix
